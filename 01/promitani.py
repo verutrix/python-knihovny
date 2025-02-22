@@ -1,6 +1,6 @@
 # https://kodim.cz/czechitas/uvod-do-progr-2/bonusy/cykly-2/list-comprehension/promitani
+import math
 
 def prevod(vstup):
-    result = []
-    result = [str(round(delka / 60)) + ":" + str(delka % 60) for delka in vstup]
-
+    return [f"{math.floor(delka / 60)}:{delka % 60:02d}" for delka in vstup]
+    
