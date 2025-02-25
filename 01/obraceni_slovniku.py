@@ -2,7 +2,7 @@
 # Použij dict comprehension
 
 def obrat_slovnik(slovnik):
-    return {slovnik[k]: k for k in slovnik}
+    return {v: k for k, v in slovnik.items()}
 
 
 # Napoveda:
