@@ -42,7 +42,6 @@ Repozitář k navazujícímu kurzu Pythonu
 ![Branching](branching.png)
 
 ## Seznam kouču
-
 ```
 @tomato42 @ZelenyMartin @dslavicek @JKafka97 @ninabel @vanovap @OndraVagner
 ```
