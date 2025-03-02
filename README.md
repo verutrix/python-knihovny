@@ -19,3 +19,30 @@ Repozitář k navazujícímu kurzu Pythonu
 [cykly]: https://kodim.cz/czechitas/uvod-do-progr-2/bonusy/cykly-2/cyklus-s-ciselnou-radou
 [params]: https://kodim.cz/czechitas/uvod-do-progr-2/bonusy/parametry-prikazove-radky/parametry
 [regexp]: https://kodim.cz/czechitas/python-data-1/ziskavani-dat/regularni-vyrazy/regularni-vyrazy
+
+
+## Odevzdávání úkolů
+
+* Nastavte si _Watch all activity_ v tomto repozitáři.
+* Vytvořte si _fork_ tohoto repozitáře pomocí tlačítka _Fork_. Tento repozitář
+  obsahuje pouze větev `main`, takže je jedno, jestli necháte zaškrtnuto _Copy
+  the `main` branch only_ nebo ne. Forky public repozítářů jsou také public.
+* Do `main` branch vašeho forku nikdy necommitujte. Tuto branch vždy
+  aktualizujte pomocí tlačítka _Sync fork_ a _Update branch_.
+* Vytvořte si branch `reseni`. Do této branche taky nikdy necommitujte. Bude
+  sloužit pouze jako cíl vašich pull requestů s řešeními jednotlivých úkolů.
+* K řešení každého úkolu si vytvořte separátní branch z branche `main`. Název
+  branche bude např. `ukol-banka`.
+* Po commitnutí řešení otevřte pull request v rámci vašeho forku z branch
+  `ukol-banka` do branch `reseni`.
+* Dejte _mention_ na kouče pomocí @, popř. je pozvěte do vašeho forku jako
+  collaboratory.
+* Po schválení PR (opravení úkolu) můžete PR zamergovat do branche `reseni`.
+
+![Branching](branching.png)
+
+## Seznam kouču
+
+```
+@tomato42 @ZelenyMartin @dslavicek @JKafka97 @ninabel @vanovap @OndraVagner
+```
