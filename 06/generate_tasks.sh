@@ -101,19 +101,48 @@ def test_count_vowels():
     assert count_vowels("AEIOU") == 5
 '
 
-write_task_and_test "06" "count_vowels" '
-def count_vowels(s: str) -> int:
+write_task_and_test "06" "filter_by_age" '
+def filter_by_age(people: dict):
     """
-    Vrátí počet samohlásek v řetězci (a, e, i, o, u).
+    Napiš funkci filter_by_age, která vezme seznam slovníků, kde každý slovník
+    představuje osobu (s klíči name a age), a vrátí seznam osob, které jsou
+    starší než 18 let.
     """
 ' '
 import pytest
-from tasks.task_06_count_vowels import count_vowels
+from tasks.task_06_filter_by_age import filter_by_age
 
-def test_count_vowels():
-    assert count_vowels("hello") == 2
-    assert count_vowels("xyz") == 0
-    assert count_vowels("AEIOU") == 5
+def test_filter_by_age():
+    # Test pro seznam osob, kde některé mají věk nad 18
+    people = [
+        {"name": "Alice", "age": 20},
+        {"name": "Bob", "age": 17},
+        {"name": "Charlie", "age": 22},
+        {"name": "David", "age": 18}
+    ]
+    result = filter_by_age(people)
+    assert result == [
+        {"name": "Alice", "age": 20},
+        {"name": "Charlie", "age": 22},
+        {"name": "David", "age": 18}
+    ]
+
+    # Test pro prázdný seznam
+    assert filter_by_age([]) == []
+
+    # Test pro všechny osoby mladší než 18
+    people = [
+        {"name": "Eve", "age": 17},
+        {"name": "Frank", "age": 16}
+    ]
+    assert filter_by_age(people) == []
+
+    # Test pro všechny osoby starší než 18
+    people = [
+        {"name": "Grace", "age": 25},
+        {"name": "Hank", "age": 30}
+    ]
+    assert filter_by_age(people) == people
 '
 
 write_task_and_test "07" "reverse_string" '
